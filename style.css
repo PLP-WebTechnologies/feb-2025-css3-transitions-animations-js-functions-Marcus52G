@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1); /* Smoothly enlarges the button when hovered */
+    background-color: lightblue;
+}
+
+#animatedBox {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    margin: 20px auto;
+    transition: transform 1s ease;
+    animation: bounce 2s infinite; /* Smooth bouncing animation */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
